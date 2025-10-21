@@ -5,7 +5,8 @@ newman.run({
     // Specifies the Postman Collection to run.
     // The collection path uses require() to load a JSON collection file, typical in local setups.
     // The screenshot path: require('./collection/dmoney-user-api-collection.json') is not fully visible.
-    collection: `https://api.postman.com/collections/41098011-2753eeec-51a9-4079-91ad-bf01f583b012?access_key=${process.env.PMAT_KEY}`,
+    // collection: `https://api.postman.com/collections/41098011-2753eeec-51a9-4079-91ad-bf01f583b012?access_key=${process.env.PMAT_KEY}`,
+    collection: require('./collection/dmoney.json'),
     // The screenshot also shows a remote URL, which is less common for local development but possible.
     // collection: 'https://api.postman.com/collections/1844288-ed96937c...',
 
